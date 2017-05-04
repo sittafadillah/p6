@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int batas;
+    int i=0;
+    int j=0;
+
+    cout<<"Berapa batasnya?";
+    cin>>batas;
+
+    /*for(int i=0;i<batas;i++)
+    {
+        for(int j=0;j<i;j++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+
+    while(i<=batas)
+    {
+        j=0;
+        while(j<i)
+        {
+            cout<<"*";
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }*/
+
+    for(i=batas;i>=1;i--)
+    {
+        for(j=i;j>=1;j--)
+        {
+            cout<<j;
+        }
+        cout<<endl;
+    }
+    return 0;
+}
